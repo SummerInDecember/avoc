@@ -1,0 +1,7 @@
+/home/birb/avoc/build/CMakeFiles/avoc.dir
+/home/birb/avoc/build/CMakeFiles/edit_cache.dir
+/home/birb/avoc/build/CMakeFiles/rebuild_cache.dir
+/home/birb/avoc/build/CMakeFiles/list_install_components.dir
+/home/birb/avoc/build/CMakeFiles/install.dir
+/home/birb/avoc/build/CMakeFiles/install/local.dir
+/home/birb/avoc/build/CMakeFiles/install/strip.dir

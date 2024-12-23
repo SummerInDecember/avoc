@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/birb/avoc/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/avoc.dir/src/main.cpp.o -c /home/birb/avoc/src/main.cpp",
+  "file": "/home/birb/avoc/src/main.cpp",
+  "output": "CMakeFiles/avoc.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/birb/avoc/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/avoc.dir/src/token.cpp.o -c /home/birb/avoc/src/token.cpp",
+  "file": "/home/birb/avoc/src/token.cpp",
+  "output": "CMakeFiles/avoc.dir/src/token.cpp.o"
+}
+]
