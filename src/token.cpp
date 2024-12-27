@@ -37,11 +37,9 @@ std::vector<Token> Tokenizer::tokenize(std::string input)
 
     current = input[0];
 
-    while(current != EOF && current != '\0')
+    while(current != EOF && current != '\0' )
     {
-        
         skipSpace();
-
         if(isdigit(current))
         {
             tokens.push_back(Token(int_val, getNum()));
@@ -59,7 +57,11 @@ std::vector<Token> Tokenizer::tokenize(std::string input)
                 tokens.push_back(Token(assign, "="));
         }
         else if(current == ';')
+        {
             tokens.push_back(Token(semicolon, ";"));
+        }
+        else if(isspace(current))
+            skipSpace(); 
         else
         {
             tokens.push_back(getValue());
@@ -87,12 +89,12 @@ Token Tokenizer::getValue()
 {
     std::stringstream val;
     val << current;
-    while(!isNextReservedChar() && !isspace(next))
+    while(!isNextReservedChar() && !isspace(next) && current != '\0')
     {
         moveChar();
         val << current;
     }
-    
+    moveChar(); 
     if(_reservedKeyWord[val.str()] == val.str())
     {
         std::string stringVal = val.str();
@@ -120,7 +122,6 @@ void Tokenizer::skipSpace()
 {
     while(isspace(current))
     {
-        std::cout << current << std::endl;
         moveChar();
     }
 }
